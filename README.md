@@ -37,10 +37,12 @@ data
 #### Pretrained Models
 Download them from the following urls
 
-#### Generate Saliency Maps
+#### Generate Saliency Maps and Evaluate
 ```
 python run_test.py
+python evaluate.py
 ```
 #### Pre-computed Saliency maps
+Download them from the following urls
 
 

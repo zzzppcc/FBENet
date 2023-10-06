@@ -1,6 +1,4 @@
 # FBENet
-# FBENet
-
 ### Data Preparation
 Download the following datasets and unzip them into `data` folder
 - [DUTS](http://saliencydetection.net/duts/)

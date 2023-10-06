@@ -1,12 +1,5 @@
 # FBENet
 ### Data Preparation
-Download the following datasets and unzip them into `data` folder
-- [DUTS](http://saliencydetection.net/duts/)
-- [ECSSD](http://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html)
-- [HKU-IS](https://i.cs.hku.hk/~gbli/deep_saliency.html)
-- [DUT-OMRON](http://saliencydetection.net/dut-omron/)
-- [PASCAL-S](http://cbi.gatech.edu/salobj/)
- 
 The overall file structure is as follows:
 ```shell
 data

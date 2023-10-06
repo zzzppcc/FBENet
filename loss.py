@@ -8,13 +8,6 @@ def iou(pred,mask):
     iou = 1-(inter+1)/(union-inter+1)
     return iou.mean()
 
-def dice(pred,mask):
-    pred  = torch.sigmoid(pred)
-    inter = ((pred*mask)).sum(dim=(2,3))
-    union = ((pred+mask)).sum(dim=(2,3))
-    dice = 1-(2.*inter+1)/(union+1)
-    return dice.mean()
-
 def foreLoss(pred,mask):
     weight = torch.zeros_like(mask)
     weight = torch.fill_(weight,0.25)

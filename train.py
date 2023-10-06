@@ -86,7 +86,7 @@ def train(Dataset=dataset, Network=B3Net):
                         eval_step+=1
                     mae/=eval_step
                     if mae<=0.0485:
-                        savepath = cfg.savepath+"/b3net/model-"+str(datetime.datetime.now())+'_'+str(mae)+'_'+str(epoch+1)+".pth"
+                        savepath = cfg.savepath+"/FBENet/model-"+str(datetime.datetime.now())+'_'+str(mae)+'_'+str(epoch+1)+".pth"
                         torch.save(net.state_dict(),savepath)
                         print("saved in"+savepath)
 

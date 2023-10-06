@@ -9,7 +9,7 @@ for dataset in datasets:
     with open(os.path.join("data",dataset,"test.txt")) as f:
         for line in f:
             gt_path = os.path.join("data",dataset,'mask',line.replace("\n","")+".png")
-            pred_path = os.path.join("predict/b3net",dataset,line.replace("\n","")+".png")
+            pred_path = os.path.join("predict/FBENet",dataset,line.replace("\n","")+".png")
             gt = cv2.imread(gt_path,cv2.IMREAD_GRAYSCALE)
             pred = cv2.imread(pred_path,cv2.IMREAD_GRAYSCALE)
             if pred is not None and gt.shape==pred.shape:

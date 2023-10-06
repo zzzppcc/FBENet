@@ -26,6 +26,15 @@ data
 │   ├── mask
 │   ├── test.txt
 ```
+### Requirements
+
+* python 3.7
+* apex 0.1
+* pytorch 1.9.0+cu111
+* opencv-python 4.5.5
+* numpy 1.21.5
+
+
 ### Test
 #### Pretrained Models
 Download them from the following urls

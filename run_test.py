@@ -28,7 +28,7 @@ class Test(object):
                 image = image.cuda().float()
                 out1, out2, out3, pred = self.net(image, shape)
                 pred  = (torch.sigmoid(pred[0,0])*255).cpu().numpy()
-                head = os.path.join("predict","b3net",self.cfg.datapath.split('/')[-1])
+                head = os.path.join("predict","FBENet",self.cfg.datapath.split('/')[-1])
                 if not os.path.exists(head):
                     os.makedirs(head)
                 cv2.imwrite(head+'/'+name[0]+'.png', np.round(pred))

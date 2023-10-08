@@ -43,6 +43,7 @@ Download from the following urls
 
 #### Generate Saliency Maps and Evaluate
 ```
+cd src
 python run_test.py
 python evaluate.py
 ```
